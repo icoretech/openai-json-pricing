@@ -1,13 +1,16 @@
 # OpenAI JSON Pricing
 
-Public machine-readable OpenAI pricing catalog generated from the official OpenAI pricing page.
+[OpenAI JSON Pricing](https://icoretech.github.io/openai-json-pricing/pricing.json)
+is a public machine-readable OpenAI pricing catalog offered by iCoreTech, Inc.
+It is generated from the official OpenAI pricing page and published as static
+JSON for services that need automated pricing refreshes.
 
-Canonical URL:
+## Canonical URL
 
-```text
-https://icoretech.github.io/openai-json-pricing/pricing.json
-```
+[https://icoretech.github.io/openai-json-pricing/pricing.json](https://icoretech.github.io/openai-json-pricing/pricing.json)
 
-This repository is a static publication target. The generated `pricing.json` file is used by Codex Pooler for scheduled pricing snapshot refreshes; Codex Pooler still ships its own vendored fallback for install, migration, and local development paths.
+## Codex Pooler
 
-Do not commit API keys, browser tokens, Windmill variables, or other credentials here.
+The generated `pricing.json` file is consumed by
+[Codex Pooler](https://github.com/icoretech/codex-pooler) for scheduled pricing
+snapshot refreshes.
