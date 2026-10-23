@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T21:05:26.969840Z",
+  "generated_at": "2026-10-23T21:10:27.179960Z",
   "models": {
     "babbage-002": {
       "categories": [
@@ -2834,6 +2834,41 @@
         "per_1m_tokens"
       ]
     },
+    "gpt-image-1": {
+      "categories": [
+        "image_generation"
+      ],
+      "category": "image_generation",
+      "model": "gpt-image-1",
+      "prices": {
+        "batch": {
+          "image": {
+            "cached_input": 1.25,
+            "input": 5.0,
+            "output": 20.0
+          },
+          "text": {
+            "cached_input": 0.63,
+            "input": 2.5
+          }
+        },
+        "standard": {
+          "image": {
+            "cached_input": 2.5,
+            "input": 10.0,
+            "output": 40.0
+          },
+          "text": {
+            "cached_input": 1.25,
+            "input": 5.0
+          }
+        }
+      },
+      "pricing_type": "per_1m_tokens",
+      "pricing_types": [
+        "per_1m_tokens"
+      ]
+    },
     "gpt-image-1-mini": {
       "categories": [
         "image_generation"
@@ -3835,7 +3870,7 @@
       ]
     }
   },
-  "models_count": 82,
+  "models_count": 83,
   "schema_version": 2,
   "source": "openai_official_pricing_page",
   "source_url": "https://developers.openai.com/api/docs/pricing",
