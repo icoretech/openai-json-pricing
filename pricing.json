@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T16:35:31.093079Z",
+  "generated_at": "2026-10-23T16:40:26.804391Z",
   "models": {
     "babbage-002": {
       "categories": [
@@ -3873,7 +3873,7 @@
   "models_count": 83,
   "schema_version": 2,
   "source": "openai_official_pricing_page",
-  "source_url": "https://platform.openai.com/docs/pricing",
+  "source_url": "https://developers.openai.com/api/docs/pricing",
   "tools": {
     "agent-kit": {
       "amounts": [
