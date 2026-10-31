@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T17:40:28.773443Z",
+  "generated_at": "2026-10-31T08:25:21.774807Z",
   "models": {
     "babbage-002": {
       "categories": [
@@ -2401,6 +2401,38 @@
         "per_1m_tokens"
       ]
     },
+    "gpt-6-astra-law": {
+      "categories": [
+        "legal"
+      ],
+      "category": "legal",
+      "context_pricing": {
+        "tiers": {
+          "standard": {
+            "provenance": {
+              "evidence_sha256": "cb9a2bceda85d106b5dedfd9975259b347653e62b6d5b755bba2371814494828",
+              "locator": "gpt-6-astra-law/standard/context"
+            },
+            "status": "uniform"
+          }
+        },
+        "version": 1
+      },
+      "model": "gpt-6-astra-law",
+      "prices": {
+        "standard": {
+          "default": {
+            "cached_input": 1.0,
+            "input": 10.0,
+            "output": 50.0
+          }
+        }
+      },
+      "pricing_type": "per_1m_tokens",
+      "pricing_types": [
+        "per_1m_tokens"
+      ]
+    },
     "gpt-6-luna": {
       "categories": [
         "language_model"
@@ -4013,7 +4045,7 @@
       ]
     }
   },
-  "models_count": 84,
+  "models_count": 85,
   "schema_version": 2,
   "source": "openai_official_pricing_page",
   "source_url": "https://developers.openai.com/api/docs/pricing",
