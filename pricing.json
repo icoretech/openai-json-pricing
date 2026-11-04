@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T21:15:29.275529Z",
+  "generated_at": "2026-11-04T23:45:30.599125Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -2828,6 +2828,54 @@
         "per_1m_tokens"
       ]
     },
+    "gpt-image-2.6-flare": {
+      "categories": [
+        "image_generation"
+      ],
+      "category": "image_generation",
+      "model": "gpt-image-2.6-flare",
+      "prices": {
+        "standard": {
+          "image": {
+            "cached_input": 2.0,
+            "input": 8.0,
+            "output": 30.0
+          },
+          "text": {
+            "cached_input": 1.25,
+            "input": 5.0
+          }
+        }
+      },
+      "pricing_type": "per_1m_tokens",
+      "pricing_types": [
+        "per_1m_tokens"
+      ]
+    },
+    "gpt-image-2.6-sunburst": {
+      "categories": [
+        "image_generation"
+      ],
+      "category": "image_generation",
+      "model": "gpt-image-2.6-sunburst",
+      "prices": {
+        "standard": {
+          "image": {
+            "cached_input": 2.0,
+            "input": 8.0,
+            "output": 30.0
+          },
+          "text": {
+            "cached_input": 1.25,
+            "input": 5.0
+          }
+        }
+      },
+      "pricing_type": "per_1m_tokens",
+      "pricing_types": [
+        "per_1m_tokens"
+      ]
+    },
     "gpt-live-1": {
       "categories": [
         "realtime_audio"
@@ -3418,7 +3466,7 @@
       ]
     }
   },
-  "models_count": 71,
+  "models_count": 73,
   "schema_version": 2,
   "source": "openai_official_pricing_page",
   "source_url": "https://developers.openai.com/api/docs/pricing",
