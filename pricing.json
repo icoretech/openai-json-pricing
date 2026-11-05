@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T23:45:30.599125Z",
+  "generated_at": "2026-11-05T17:10:31.366654Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -2058,6 +2058,51 @@
         "per_1m_tokens"
       ]
     },
+    "gpt-6-cyber": {
+      "categories": [
+        "cyber"
+      ],
+      "category": "cyber",
+      "context_pricing": {
+        "tiers": {
+          "standard": {
+            "long_context_input_tokens_gt": 272000,
+            "provenance": {
+              "evidence_sha256": "958ec764f75da3ab4dacab92a0c5ce3d9beb5d259c254a7e312955cc817d8a03",
+              "locator": "gpt-6-cyber/standard/context"
+            },
+            "status": "known"
+          }
+        },
+        "version": 1
+      },
+      "model": "gpt-6-cyber",
+      "prices": {
+        "standard": {
+          "default": {
+            "cache_write_12h": 50.0,
+            "cache_write_30m": 25.0,
+            "cached_input": 2.0,
+            "input": 20.0,
+            "output": 100.0
+          },
+          "long_context": {
+            "available": false
+          },
+          "short_context": {
+            "cache_write_12h": 50.0,
+            "cache_write_30m": 25.0,
+            "cached_input": 2.0,
+            "input": 20.0,
+            "output": 100.0
+          }
+        }
+      },
+      "pricing_type": "per_1m_tokens",
+      "pricing_types": [
+        "per_1m_tokens"
+      ]
+    },
     "gpt-6-luna": {
       "categories": [
         "language_model"
@@ -3466,7 +3511,7 @@
       ]
     }
   },
-  "models_count": 73,
+  "models_count": 74,
   "schema_version": 2,
   "source": "openai_official_pricing_page",
   "source_url": "https://developers.openai.com/api/docs/pricing",
