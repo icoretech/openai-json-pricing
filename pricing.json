@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T17:10:31.366654Z",
+  "generated_at": "2026-11-09T23:20:25.485139Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -2087,7 +2087,9 @@
             "output": 100.0
           },
           "long_context": {
-            "available": false
+            "cached_input": 4.0,
+            "input": 40.0,
+            "output": 150.0
           },
           "short_context": {
             "cache_write_12h": 50.0,
