@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T01:45:44.753276Z",
+  "generated_at": "2026-11-10T04:55:30.162567Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -1403,7 +1403,7 @@
         "per_1m_tokens"
       ]
     },
-    "gpt-5.5-cyber": {
+    "gpt-5.5-cyber-preview": {
       "categories": [
         "cyber"
       ],
@@ -1414,14 +1414,14 @@
             "long_context_input_tokens_gt": 272000,
             "provenance": {
               "evidence_sha256": "49946ba9438cf21bb25d54a74e1b44400d63f65ed64d562ca129d3cc9334517e",
-              "locator": "gpt-5.5-cyber/standard/context"
+              "locator": "gpt-5.5-cyber-preview/standard/context"
             },
             "status": "known"
           }
         },
         "version": 1
       },
-      "model": "gpt-5.5-cyber",
+      "model": "gpt-5.5-cyber-preview",
       "prices": {
         "standard": {
           "default": {
