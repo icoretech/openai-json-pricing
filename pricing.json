@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T23:20:25.485139Z",
+  "generated_at": "2026-11-10T01:45:44.753276Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -10,7 +10,7 @@
         "tiers": {
           "standard": {
             "provenance": {
-              "evidence_sha256": "f64e1feda2c1f7815f724ac8920720e1e9a1ce6c217cece041f34ca2af2d43f7",
+              "evidence_sha256": "af9839f2b096e295896c9feea6f27b10b3210823d5b7089de258e775fbb07790",
               "locator": "chat-latest/standard/context"
             },
             "status": "uniform"
@@ -764,7 +764,7 @@
         "tiers": {
           "standard": {
             "provenance": {
-              "evidence_sha256": "f64e1feda2c1f7815f724ac8920720e1e9a1ce6c217cece041f34ca2af2d43f7",
+              "evidence_sha256": "af9839f2b096e295896c9feea6f27b10b3210823d5b7089de258e775fbb07790",
               "locator": "gpt-5-search-api/standard/context"
             },
             "status": "uniform"
@@ -988,14 +988,14 @@
         "tiers": {
           "fast": {
             "provenance": {
-              "evidence_sha256": "f64e1feda2c1f7815f724ac8920720e1e9a1ce6c217cece041f34ca2af2d43f7",
+              "evidence_sha256": "98cd2a67e00a26319577039f6886d67eeca02fb087c03327d42f16d46abbb4da",
               "locator": "gpt-5.3-codex/fast/context"
             },
             "status": "uniform"
           },
           "standard": {
             "provenance": {
-              "evidence_sha256": "f64e1feda2c1f7815f724ac8920720e1e9a1ce6c217cece041f34ca2af2d43f7",
+              "evidence_sha256": "af9839f2b096e295896c9feea6f27b10b3210823d5b7089de258e775fbb07790",
               "locator": "gpt-5.3-codex/standard/context"
             },
             "status": "uniform"
@@ -1413,7 +1413,7 @@
           "standard": {
             "long_context_input_tokens_gt": 272000,
             "provenance": {
-              "evidence_sha256": "958ec764f75da3ab4dacab92a0c5ce3d9beb5d259c254a7e312955cc817d8a03",
+              "evidence_sha256": "49946ba9438cf21bb25d54a74e1b44400d63f65ed64d562ca129d3cc9334517e",
               "locator": "gpt-5.5-cyber/standard/context"
             },
             "status": "known"
@@ -1515,7 +1515,7 @@
           "standard": {
             "long_context_input_tokens_gt": 272000,
             "provenance": {
-              "evidence_sha256": "958ec764f75da3ab4dacab92a0c5ce3d9beb5d259c254a7e312955cc817d8a03",
+              "evidence_sha256": "49946ba9438cf21bb25d54a74e1b44400d63f65ed64d562ca129d3cc9334517e",
               "locator": "gpt-5.6-cyber/standard/context"
             },
             "status": "known"
@@ -1663,7 +1663,6 @@
     },
     "gpt-5.6-sol": {
       "categories": [
-        "cyber",
         "language_model"
       ],
       "category": "language_model",
@@ -2035,7 +2034,7 @@
         "tiers": {
           "standard": {
             "provenance": {
-              "evidence_sha256": "cb9a2bceda85d106b5dedfd9975259b347653e62b6d5b755bba2371814494828",
+              "evidence_sha256": "af9839f2b096e295896c9feea6f27b10b3210823d5b7089de258e775fbb07790",
               "locator": "gpt-6-astra-law/standard/context"
             },
             "status": "uniform"
@@ -2068,7 +2067,7 @@
           "standard": {
             "long_context_input_tokens_gt": 272000,
             "provenance": {
-              "evidence_sha256": "958ec764f75da3ab4dacab92a0c5ce3d9beb5d259c254a7e312955cc817d8a03",
+              "evidence_sha256": "49946ba9438cf21bb25d54a74e1b44400d63f65ed64d562ca129d3cc9334517e",
               "locator": "gpt-6-cyber/standard/context"
             },
             "status": "known"
@@ -2226,7 +2225,7 @@
           "standard": {
             "long_context_input_tokens_gt": 272000,
             "provenance": {
-              "evidence_sha256": "958ec764f75da3ab4dacab92a0c5ce3d9beb5d259c254a7e312955cc817d8a03",
+              "evidence_sha256": "49946ba9438cf21bb25d54a74e1b44400d63f65ed64d562ca129d3cc9334517e",
               "locator": "gpt-6-rosalind/standard/context"
             },
             "status": "known"
@@ -3179,7 +3178,7 @@
           "standard": {
             "long_context_input_tokens_gt": 272000,
             "provenance": {
-              "evidence_sha256": "958ec764f75da3ab4dacab92a0c5ce3d9beb5d259c254a7e312955cc817d8a03",
+              "evidence_sha256": "49946ba9438cf21bb25d54a74e1b44400d63f65ed64d562ca129d3cc9334517e",
               "locator": "gpt-rosalind-discovery/standard/context"
             },
             "status": "known"
@@ -3220,7 +3219,7 @@
           "standard": {
             "long_context_input_tokens_gt": 272000,
             "provenance": {
-              "evidence_sha256": "958ec764f75da3ab4dacab92a0c5ce3d9beb5d259c254a7e312955cc817d8a03",
+              "evidence_sha256": "49946ba9438cf21bb25d54a74e1b44400d63f65ed64d562ca129d3cc9334517e",
               "locator": "gpt-rosalind-research/standard/context"
             },
             "status": "known"
@@ -3525,14 +3524,14 @@
       "details": "ChatKit file and image upload storage",
       "price": 0.1,
       "price_semantics": "first listed rate; consult rates for billing conditions",
-      "pricing": "$0.10 / GB-day after 1 GB free per account per month",
+      "pricing": "$0.10 / GB-day 1 GB free",
       "rates": [
         {
           "amounts": [
             0.1
           ],
           "details": "ChatKit file and image upload storage",
-          "pricing": "$0.10 / GB-day after 1 GB free per account per month",
+          "pricing": "$0.10 / GB-day 1 GB free",
           "tool": "Agent Kit"
         }
       ],
@@ -3548,7 +3547,7 @@
       "details": "Hosted Shell and Code Interpreter",
       "price": 0.03,
       "price_semantics": "first listed rate; consult rates for billing conditions",
-      "pricing": "1 GB $0.03, 4 GB $0.12, 16 GB $0.48, 64 GB $1.92 per 20-minute session per container.",
+      "pricing": "1 GB $0.03, 4 GB $0.12, 16 GB $0.48, 64 GB $1.92 per 20-minute session per container",
       "rates": [
         {
           "amounts": [
@@ -3558,7 +3557,7 @@
             1.92
           ],
           "details": "Hosted Shell and Code Interpreter",
-          "pricing": "1 GB $0.03, 4 GB $0.12, 16 GB $0.48, 64 GB $1.92 per 20-minute session per container.",
+          "pricing": "1 GB $0.03, 4 GB $0.12, 16 GB $0.48, 64 GB $1.92 per 20-minute session per container",
           "tool": "Containers"
         }
       ],
@@ -3571,14 +3570,14 @@
       "details": "Storage",
       "price": 0.1,
       "price_semantics": "first listed rate; consult rates for billing conditions",
-      "pricing": "$0.10 / GB per day (1 GB free)",
+      "pricing": "$0.10 / GB per day 1 GB free",
       "rates": [
         {
           "amounts": [
             0.1
           ],
           "details": "Storage",
-          "pricing": "$0.10 / GB per day (1 GB free)",
+          "pricing": "$0.10 / GB per day 1 GB free",
           "tool": "File search"
         },
         {
@@ -3596,7 +3595,7 @@
       "amounts": [
         10.0
       ],
-      "details": "Web search (all models)",
+      "details": "Web search (incl. images)",
       "price": 10.0,
       "price_semantics": "first listed rate; consult rates for billing conditions",
       "pricing": "$10.00 / 1k calls + Search content tokens billed at model rates.",
@@ -3605,7 +3604,7 @@
           "amounts": [
             10.0
           ],
-          "details": "Web search (all models)",
+          "details": "Web search (incl. images)",
           "pricing": "$10.00 / 1k calls + Search content tokens billed at model rates.",
           "tool": "Web search"
         },
@@ -3613,15 +3612,7 @@
           "amounts": [
             10.0
           ],
-          "details": "Image Web search (all models)",
-          "pricing": "$10.00 / 1k calls + Search content tokens billed at model rates.",
-          "tool": "Web search"
-        },
-        {
-          "amounts": [
-            10.0
-          ],
-          "details": "Web search preview (reasoning models, including gpt-5 , o-series )",
+          "details": "Web search preview (reasoning models)",
           "pricing": "$10.00 / 1k calls + Search content tokens billed at model rates.",
           "tool": "Web search"
         },
@@ -3629,7 +3620,7 @@
           "amounts": [
             25.0
           ],
-          "details": "Web search preview (non-reasoning models)",
+          "details": "Web search preview (other models)",
           "pricing": "$25.00 / 1k calls + Search content tokens are free.",
           "tool": "Web search"
         }
