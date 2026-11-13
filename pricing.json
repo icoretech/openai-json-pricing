@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T04:55:30.162567Z",
+  "generated_at": "2026-11-13T17:40:21.762985Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -2881,6 +2881,17 @@
       "category": "image_generation",
       "model": "gpt-image-2.6-flare",
       "prices": {
+        "batch": {
+          "image": {
+            "cached_input": 1.0,
+            "input": 4.0,
+            "output": 15.0
+          },
+          "text": {
+            "cached_input": 0.625,
+            "input": 2.5
+          }
+        },
         "standard": {
           "image": {
             "cached_input": 2.0,
@@ -2905,6 +2916,17 @@
       "category": "image_generation",
       "model": "gpt-image-2.6-sunburst",
       "prices": {
+        "batch": {
+          "image": {
+            "cached_input": 1.0,
+            "input": 4.0,
+            "output": 15.0
+          },
+          "text": {
+            "cached_input": 0.625,
+            "input": 2.5
+          }
+        },
         "standard": {
           "image": {
             "cached_input": 2.0,
