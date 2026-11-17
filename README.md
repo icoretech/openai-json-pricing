@@ -47,6 +47,8 @@ evidence:
 }
 ```
 
+Models may include `pricing_applicability` when a published rate cannot be selected safely from the captured page alone. Its `version` is `1`, and `tiers` maps a raw price tier to `status: "unsupported"`, a bounded `reason`, and a `mode` of `skip` or `unavailable`. `skip` omits the tier from generic snapshots, while `unavailable` retains the tier as an explicitly unavailable reporting row. Consumers must not substitute another tier when either mode is present.
+
 Each tier descriptor has exactly the fields for its status:
 
 | Status | Fields besides `status` and `provenance` | Meaning |
