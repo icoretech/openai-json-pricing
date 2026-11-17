@@ -47,7 +47,7 @@ evidence:
 }
 ```
 
-Models may include `pricing_applicability` when a published rate cannot be selected safely from the captured page alone. Its `version` is `1`, and `tiers` maps a raw price tier to `status: "unsupported"`, a bounded `reason`, and a `mode` of `skip` or `unavailable`. `skip` omits the tier from generic snapshots, while `unavailable` retains the tier as an explicitly unavailable reporting row. Consumers must not substitute another tier when either mode is present.
+Models may include `pricing_applicability` when a published rate needs an applicability rule. Its `version` is `1`, and `tiers` maps a raw price tier to a rule. Unsupported rules use `status: "unsupported"`, a bounded `reason`, and a `mode` of `skip` or `unavailable`. Effective rules use `status: "supported"`, `mode: "effective"`, a bounded `reason`, a source `timezone`, and optional `effective_at` and `effective_until` ISO-8601 timestamps. `skip` omits the tier from generic snapshots, `unavailable` retains the tier as an explicitly unavailable reporting row, and `effective` lets consumers select the tier by timestamp. Consumers must not substitute another tier when an unsupported mode is present.
 
 Each tier descriptor has exactly the fields for its status:
 
