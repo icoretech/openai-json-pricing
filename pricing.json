@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T20:15:24.500413Z",
+  "generated_at": "2026-11-19T20:54:19.729316Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -3773,6 +3773,7 @@
         "standard": {
           "default": {
             "active_rate": 0.05,
+            "price_per_minute": 0.05,
             "standby_rate": 0.02
           }
         }
@@ -3780,7 +3781,17 @@
       "pricing_type": "per_minute",
       "pricing_types": [
         "per_minute"
-      ]
+      ],
+      "session_billing": {
+        "billing_increment_seconds": 1,
+        "currency": "USD",
+        "rate_unit": "minute",
+        "standby_requires": {
+          "inference": "paused",
+          "transport": "webrtc"
+        },
+        "version": 1
+      }
     },
     "gpt-live-1.1": {
       "categories": [
@@ -3792,6 +3803,7 @@
         "standard": {
           "default": {
             "active_rate": 0.05,
+            "price_per_minute": 0.05,
             "standby_rate": 0.02
           }
         }
@@ -3799,7 +3811,17 @@
       "pricing_type": "per_minute",
       "pricing_types": [
         "per_minute"
-      ]
+      ],
+      "session_billing": {
+        "billing_increment_seconds": 1,
+        "currency": "USD",
+        "rate_unit": "minute",
+        "standby_requires": {
+          "inference": "paused",
+          "transport": "webrtc"
+        },
+        "version": 1
+      }
     },
     "gpt-live-transcribe": {
       "categories": [

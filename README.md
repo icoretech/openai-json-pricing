@@ -83,12 +83,34 @@ with identical rates and availability. Tier aliases such as `fast` and `priority
 must agree in both prices and rule semantics before a consumer coalesces them.
 An unavailable price row is distinct from an unknown applicability rule.
 
+### GPT-Live session duration
+
+For GPT-Live voice sessions, `prices.standard.default.active_rate` and `standby_rate` are USD per minute. OpenAI bills by the second. Count standby seconds only while a WebRTC session has paused inference. The `session.paused` and `session.resumed` events mark the interval. Silence alone does not establish a pause. [Official pricing](https://developers.openai.com/api/docs/pricing#live-session-duration) · [Session guide](https://developers.openai.com/api/docs/guides/live-conversations#managing-idle-sessions)
+
+The model's `session_billing` descriptor specifies the unit, increment, and conditions used to select those rates.
+
+```json
+{
+  "version": 1,
+  "currency": "USD",
+  "rate_unit": "minute",
+  "billing_increment_seconds": 1,
+  "standby_requires": {"transport": "webrtc", "inference": "paused"}
+}
+```
+
+For known durations, the estimated cost is `(active_seconds × active_rate + standby_seconds × standby_rate) / 60`. At $0.05 and $0.02 per minute, 30 active seconds followed by 30 eligible standby seconds cost $0.035. If the session state is unknown, report the exact cost as unavailable. An active-rate estimate for the full duration is an upper bound.
+
+Catalog schema 2 retains `price_per_minute` as an alias of `active_rate` on these rows. Historical single-rate rows contain only `price_per_minute`. An intermediate schema-2 publication contains the two named rates without the alias or descriptor. Readers that require an exact set of fields must recognize these layouts before refreshing the catalog. Other per-minute models retain their own descriptors.
+
 ## Compatibility and change detection
 
-Use a consumer that supports schema 2 and timestamp-free model records. Older
-Codex Pooler importers reject this output; update the consumer before selecting
-this catalog format. Codex Pooler's importer format revision 3 supports it and
-also accepts legacy catalogs without `schema_version`.
+Use a consumer that supports schema 2, timestamp-free model records, and the
+published duration descriptors. Codex Pooler introduced timestamp-free records
+in importer format revision 3 and also accepts legacy catalogs without
+`schema_version`. A Pooler build that recognizes only the single-rate GPT-Live
+row rejects a refresh containing the two-rate layout. Update to a build that
+validates both layouts before refreshing. [Pooler importer change](https://github.com/icoretech/codex-pooler/commit/01be430c8924275c9481d61c3c48dded83f306bd)
 
 For compatibility, that importer permits legacy or transitional model timestamps
 only when they are valid, nonblank, and equal to root `generated_at`; explicit
@@ -115,8 +137,8 @@ The generated `pricing.json` file is consumed by
 [Codex Pooler](https://github.com/icoretech/codex-pooler) for scheduled pricing
 snapshot refreshes.
 
-Imported generations are immutable. Revision 3 records the exact root generation
-string in `<generated_at>:importer-format-3` and keeps each model/tier's rule and
+Imported generations are immutable. The current importer records the root generation
+string in `<generated_at>:importer-format-5` and keeps each model/tier's rule and
 rates together. Completion selects the applicable generation at completion time,
 which can differ from the reservation's generation. Later imports do not reprice
 recorded costs or reconstruct missing historical rule facts. Advertised context
