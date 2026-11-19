@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T20:32:34.767800Z",
+  "generated_at": "2026-11-19T20:15:24.500413Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -3772,7 +3772,27 @@
       "prices": {
         "standard": {
           "default": {
-            "price_per_minute": 0.05
+            "active_rate": 0.05,
+            "standby_rate": 0.02
+          }
+        }
+      },
+      "pricing_type": "per_minute",
+      "pricing_types": [
+        "per_minute"
+      ]
+    },
+    "gpt-live-1.1": {
+      "categories": [
+        "realtime_audio"
+      ],
+      "category": "realtime_audio",
+      "model": "gpt-live-1.1",
+      "prices": {
+        "standard": {
+          "default": {
+            "active_rate": 0.05,
+            "standby_rate": 0.02
           }
         }
       },
@@ -4373,7 +4393,7 @@
       ]
     }
   },
-  "models_count": 77,
+  "models_count": 78,
   "schema_version": 2,
   "source": "openai_official_pricing_page",
   "source_url": "https://developers.openai.com/api/docs/pricing",
