@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T16:30:50.813939Z",
+  "generated_at": "2026-11-21T16:35:34.999051Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -4418,7 +4418,7 @@
   "models_count": 78,
   "schema_version": 2,
   "source": "openai_official_pricing_page",
-  "source_url": "https://platform.openai.com/docs/pricing",
+  "source_url": "https://developers.openai.com/api/docs/pricing",
   "tools": {
     "agent-kit": {
       "amounts": [
