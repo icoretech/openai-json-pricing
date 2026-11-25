@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:15:29.908434Z",
+  "generated_at": "2026-11-25T04:10:27.716179Z",
   "models": {
     "chat-latest": {
       "categories": [
@@ -2305,6 +2305,16 @@
           }
         }
       },
+      "pricing_applicability": {
+        "tiers": {
+          "standard": {
+            "mode": "unavailable",
+            "reason": "promotional_at_least_through_2026-12-31",
+            "status": "unsupported"
+          }
+        },
+        "version": 1
+      },
       "pricing_type": "per_1m_tokens",
       "pricing_types": [
         "per_1m_tokens"
@@ -2352,7 +2362,7 @@
         "tiers": {
           "standard": {
             "mode": "unavailable",
-            "reason": "time_conditioned",
+            "reason": "promotional_at_least_through_2026-12-31",
             "status": "unsupported"
           }
         },
@@ -2600,7 +2610,7 @@
         "tiers": {
           "standard": {
             "mode": "unavailable",
-            "reason": "time_conditioned",
+            "reason": "promotional_at_least_through_2026-12-31",
             "status": "unsupported"
           }
         },
@@ -2988,6 +2998,16 @@
             "output": 10.0
           }
         }
+      },
+      "pricing_applicability": {
+        "tiers": {
+          "standard": {
+            "mode": "unavailable",
+            "reason": "promotional_at_least_through_2026-12-31",
+            "status": "unsupported"
+          }
+        },
+        "version": 1
       },
       "pricing_type": "per_1m_tokens",
       "pricing_types": [
@@ -3399,6 +3419,16 @@
           }
         }
       },
+      "pricing_applicability": {
+        "tiers": {
+          "standard": {
+            "mode": "unavailable",
+            "reason": "promotional_at_least_through_2026-12-31",
+            "status": "unsupported"
+          }
+        },
+        "version": 1
+      },
       "pricing_type": "per_1m_tokens",
       "pricing_types": [
         "per_1m_tokens"
@@ -3452,7 +3482,7 @@
         "tiers": {
           "standard": {
             "mode": "unavailable",
-            "reason": "time_conditioned",
+            "reason": "promotional_at_least_through_2026-12-31",
             "status": "unsupported"
           }
         },
@@ -3725,6 +3755,16 @@
             "output": 10.0
           }
         }
+      },
+      "pricing_applicability": {
+        "tiers": {
+          "standard": {
+            "mode": "unavailable",
+            "reason": "promotional_at_least_through_2026-12-31",
+            "status": "unsupported"
+          }
+        },
+        "version": 1
       },
       "pricing_type": "per_1m_tokens",
       "pricing_types": [
